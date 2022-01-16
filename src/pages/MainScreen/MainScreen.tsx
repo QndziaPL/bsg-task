@@ -74,10 +74,9 @@ const MainScreen = () => {
           <Divider />
           <Row justify={"center"}>
             {entities?.map((entity) => (
-              <Col xs={24} lg={12}>
+              <Col xs={24} lg={12} key={entity.Id}>
                 <div style={{ display: "flex", justifyContent: "center" }}>
                   <SingleVideoImage
-                    key={entity.Id}
                     handleMoveToVideo={handleMoveToVideo}
                     entity={entity}
                   />
